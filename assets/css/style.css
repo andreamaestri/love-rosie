@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-/*--------------------------------------------Colors*/
+/* --------------------------------------------Colors */
 
 .bg-color-name-title {
   background-color: #676767;
@@ -20,8 +20,31 @@
 .ui-menu-color-download {
   background-color: #525252;
 }
-/*--------------------------------------------Heading*/
 
+/* --------------------------------------------Special paddings/margins/text */
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.general-sub {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 300;
+  color: #fafafa;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+/* --------------------------------------------Heading */
 header {
   margin: 0;
 }
@@ -37,8 +60,6 @@ header {
   background-size: cover;
   min-height: 360px;
   transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
 }
 
 .name {
@@ -69,6 +90,12 @@ header {
 #nav li {
   font-size: 14px;
   padding: 0;
+}
+
+#nav dl,
+ol,
+ul {
+  margin: 0;
 }
 
 .menu-item {
@@ -102,9 +129,55 @@ header {
   letter-spacing: 2px;
 }
 
-/*--------------------------------------------Hover.css*/
+
+
+/* --------------------------------------------Hover.css */
 
 .hvr-sweep-to-bottom:before {
   background: rgba(0, 0, 0, 0.2);
   height: 120px;
+}
+
+/* --------------------------------------------Footer */
+
+footer {
+  background-color: #525252;
+  color: #fafafa;
+  min-height: 120px;
+  margin: 0;
+}
+
+.cv-pdf i {
+  font-size: 18px;
+  color: #fafafa;
+  text-align: center;
+  padding-left: 5px;
+  transition: all 0.35s ease-in-out;
+}
+
+.cv-pdf i:hover {
+  color: #e84610;
+}
+
+.social-links {
+  padding-bottom: 15px;
+}
+.social-links li a i {
+  width: 32px;
+  height: 32px;
+  line-height: 32px; /* Center the icon vertically */
+  border-radius: 50%;
+  font-size: 13px;
+  text-align: center;
+  color: #fafafa;
+  background: #8f8f8f;
+  transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+  background: #e84610;
+}
+
+#footer-details {
+  padding: 20px;
 }
