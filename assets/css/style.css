@@ -75,9 +75,7 @@ header {
 }
 
 .logo {
-  background: url("../images/rosie-profile.webp");
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url("../images/rosie-profile.webp") no-repeat center;
   background-size: cover;
   min-height: 360px;
   transition: all 0.5s ease-in-out;
@@ -183,10 +181,12 @@ footer {
 .social-links {
   padding-bottom: 15px;
 }
+
 .social-links li a i {
   width: 32px;
   height: 32px;
-  line-height: 32px; /* Center the icon vertically */
+  line-height: 32px;
+  /* Center the icon vertically */
   border-radius: 50%;
   font-size: 13px;
   text-align: center;
@@ -201,4 +201,15 @@ footer {
 
 #footer-details {
   padding: 20px;
+}
+
+/* --------------------------------------------Three Reasons */
+
+.three-reasons-icon {
+  font-size: 35px;
+  color: #e67e22
+}
+
+.three-reasons-heading {
+  margin-bottom: 15px;
 }
